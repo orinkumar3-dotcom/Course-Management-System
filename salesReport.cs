@@ -13,7 +13,7 @@ namespace TMs
 {
     public partial class salesReport : Form
     {
-        string constring = "Data Source=localhost;Initial Catalog=Project;Integrated Security=True;TrustServerCertificate=True";
+    string constring = @"Data Source=localhost;Initial Catalog=Project;Integrated Security=True;TrustServerCertificate=True";
         private Form previousForm;
         public salesReport(Form previousForm)
         {
@@ -33,11 +33,11 @@ namespace TMs
 
                 // ---- Total Revenue ----
                 string revenueQuery = @"SELECT ISNULL(SUM(
-                                            co.courseprice - (co.courseprice * co.discountpercent / 100)
-                                        ), 0)
-                                        FROM cart_table c
-                                        JOIN course_table co ON c.courseid = co.courseid
-                                        WHERE c.status = 'Purchased'";
+                            co.courseprice - (co.courseprice * co.discountpercent / 100)
+                        ), 0)
+                        FROM cart_table c
+                        JOIN course_table co ON c.courseid = co.courseid
+                        WHERE c.status = 'Purchased'";
                 SqlCommand revenueCmd = new SqlCommand(revenueQuery, con);
                 decimal totalRevenue = Convert.ToDecimal(revenueCmd.ExecuteScalar());
                 label3.Text = totalRevenue.ToString("N2");
@@ -58,14 +58,14 @@ namespace TMs
                 label9.Text = pendingCount.ToString();
 
                 string salesQuery = @"SELECT u.userid, (u.firstname + ' ' + u.lastname) AS Name,
-                             co.courseid, co.coursename, co.courseprice, co.discountpercent,
-                             CAST(co.courseprice - (co.courseprice * co.discountpercent / 100) AS DECIMAL(10,2)) AS Finalprice,
-                             c.date_added
-                      FROM cart_table c
-                      JOIN user_table u ON c.userid = u.userid
-                      JOIN course_table co ON c.courseid = co.courseid
-                      WHERE c.status = 'Purchased'
-                      ORDER BY c.date_added DESC";
+             co.courseid, co.coursename, co.courseprice, co.discountpercent,
+             CAST(co.courseprice - (co.courseprice * co.discountpercent / 100) AS DECIMAL(10,2)) AS Finalprice,
+             c.date_added
+                          FROM cart_table c
+                          JOIN user_table u ON c.userid = u.userid
+                          JOIN course_table co ON c.courseid = co.courseid
+                          WHERE c.status = 'Purchased'
+                          ORDER BY c.date_added DESC";
 
                 SqlDataAdapter da = new SqlDataAdapter(salesQuery, con);
                 DataTable dt = new DataTable();
