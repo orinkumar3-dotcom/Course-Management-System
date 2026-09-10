@@ -15,7 +15,7 @@ namespace TMs
     public partial class sProfile : Form
     {
         private string userId;
-        string constring = "Data Source=localhost;Initial Catalog=Project;Integrated Security=True;TrustServerCertificate=True";
+        string constring = @"Data Source=localhost;Initial Catalog=Project;Integrated Security=True;TrustServerCertificate=True";
 
         public sProfile(string id)
         {
@@ -92,11 +92,11 @@ namespace TMs
             using (SqlConnection con = new SqlConnection(constring))
             {
                 string query = @"UPDATE user_table 
-                          SET firstname = @firstname, 
-                              lastname = @lastname, 
-                              email = @email, 
-                              dob = @dob 
-                          WHERE userid = @userid";
+                     SET firstname = @firstname, 
+                     lastname = @lastname, 
+                     email = @email, 
+                     dob = @dob 
+                 WHERE userid = @userid";
 
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
