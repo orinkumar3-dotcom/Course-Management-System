@@ -1,0 +1,2 @@
+ALTER TABLE course_table
+ADD courseprice DECIMAL(10,2) NOT NULL DEFAULT 0;

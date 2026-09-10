@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\7th Semester\\OOP2 C#\\Course Mangement System\\TMs\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{06BE341C-9095-420B-A59C-D19B8A494387}|TMs.csproj|d:\\7th semester\\oop2 c#\\course mangement system\\tms\\superadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{06BE341C-9095-420B-A59C-D19B8A494387}|TMs.csproj|solutionrelative:superadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06BE341C-9095-420B-A59C-D19B8A494387}|TMs.csproj|d:\\7th semester\\oop2 c#\\course mangement system\\tms\\supstudentmang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{06BE341C-9095-420B-A59C-D19B8A494387}|TMs.csproj|solutionrelative:supstudentmang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06BE341C-9095-420B-A59C-D19B8A494387}|TMs.csproj|d:\\7th semester\\oop2 c#\\course mangement system\\tms\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{06BE341C-9095-420B-A59C-D19B8A494387}|TMs.csproj|solutionrelative:admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06BE341C-9095-420B-A59C-D19B8A494387}|TMs.csproj|d:\\7th semester\\oop2 c#\\course mangement system\\tms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{06BE341C-9095-420B-A59C-D19B8A494387}|TMs.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06BE341C-9095-420B-A59C-D19B8A494387}|TMs.csproj|D:\\7th Semester\\OOP2 C#\\Course Mangement System\\TMs\\stgetcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06BE341C-9095-420B-A59C-D19B8A494387}|TMs.csproj|solutionrelative:stgetcourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StgetCourse.cs",
+              "DocumentMoniker": "D:\\7th Semester\\OOP2 C#\\Course Mangement System\\TMs\\StgetCourse.cs",
+              "RelativeDocumentMoniker": "StgetCourse.cs",
+              "ToolTip": "D:\\7th Semester\\OOP2 C#\\Course Mangement System\\TMs\\StgetCourse.cs",
+              "RelativeToolTip": "StgetCourse.cs",
+              "ViewState": "AgIAAN4AAAAAAAAAAAAiwPMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T20:21:17.12Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "superadmin.cs [Design]",
+              "DocumentMoniker": "D:\\7th Semester\\OOP2 C#\\Course Mangement System\\TMs\\superadmin.cs",
+              "RelativeDocumentMoniker": "superadmin.cs",
+              "ToolTip": "D:\\7th Semester\\OOP2 C#\\Course Mangement System\\TMs\\superadmin.cs [Design]",
+              "RelativeToolTip": "superadmin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T10:33:00.549Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "supstudentmang.cs [Design]",
+              "DocumentMoniker": "D:\\7th Semester\\OOP2 C#\\Course Mangement System\\TMs\\supstudentmang.cs",
+              "RelativeDocumentMoniker": "supstudentmang.cs",
+              "ToolTip": "D:\\7th Semester\\OOP2 C#\\Course Mangement System\\TMs\\supstudentmang.cs [Design]",
+              "RelativeToolTip": "supstudentmang.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T10:30:26.339Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "admin.cs [Design]",
+              "DocumentMoniker": "D:\\7th Semester\\OOP2 C#\\Course Mangement System\\TMs\\admin.cs",
+              "RelativeDocumentMoniker": "admin.cs",
+              "ToolTip": "D:\\7th Semester\\OOP2 C#\\Course Mangement System\\TMs\\admin.cs [Design]",
+              "RelativeToolTip": "admin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T10:29:05.405Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\7th Semester\\OOP2 C#\\Course Mangement System\\TMs\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "D:\\7th Semester\\OOP2 C#\\Course Mangement System\\TMs\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T09:45:37.253Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
