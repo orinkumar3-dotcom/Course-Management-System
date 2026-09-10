@@ -32,8 +32,8 @@ The database connection is configured through the `App.config` file.
 ## How to Run
 
 1. Open the project in Visual Studio.
-2. Create the required database in SQL Server.
-3. Update the SQL Server connection string in `App.config`.
+2. Create the required database in SQL Server (Must execute setup_database.sql file).
+3. Update the SQL Server connection string in the project.
 4. Run the project.
 
 ## Project Report
