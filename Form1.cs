@@ -99,7 +99,7 @@ namespace TMs
 
         private void button5_Click(object sender, EventArgs e)
         {
-            string constring = "Data Source=localhost;Initial Catalog=Project;Integrated Security=True;TrustServerCertificate=True";
+            string constring ="Data Source=localhost;Initial Catalog=Project;Integrated Security=True;TrustServerCertificate=True";
 
             using (SqlConnection con = new SqlConnection(constring))
             {
