@@ -45,15 +45,6 @@ The database connection is configured through the constring in every .cs file.
 4. Build the project.
 5. Run the project.
 
-## My Role
-
-* Group Leader
-* Project Executor
-* Facilitator
-* Database Schema Designer
-* Coder
-* Team Player
-
 ## Project Report
 
 The complete project report containing screenshots, diagrams, database design, and project information is included in this repository.
