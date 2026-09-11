@@ -17,22 +17,22 @@
 ### Login
 ![Login](login.png)
 
-![Login](LoginUI.png)
+![Login](LoginUI.png.png)
 
 ### Signup
 ![Signup](signup.png)
 
-![Signup](SignupUI.png)
+![Signup](SignupUI.png.png)
 
 ### Admin
 ![Admin](Admin.png)
 
-![Admin](adminUI.png)
+![Admin](adminUI.png.png)
 
 ### Student
 
-![Student](studentUI.png)
+![Student](studentUI.png.png)
 
 
 ### Superadmin
-![Superadmin](Superadmin.png)
+![Superadmin](Superadmin.png.png)
