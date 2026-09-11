@@ -15,10 +15,10 @@
 ## System Screenshots
 
 ### Login
-![Login](Login.png)
+![Login](login.png)
 
 ### Signup
-![Signup](Signup.png)
+![Signup](signup.png)
 
 ### Admin
 ![Admin](Admin.png)
