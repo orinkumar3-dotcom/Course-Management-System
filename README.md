@@ -1,16 +1,12 @@
-**Role: Report Making and Facilitator**
+**Role: Executor and UI Designer**
  
-- Prepared and organized the updated project report.
+- Designed the user interface of the application.
 
-- Added screenshots, diagrams, and project documentation.
+- Worked on the layout and Windows Forms components.
 
-- Coordinated communication among the group members.
+- Implemented assigned application functionalities.
 
-- Helped organize and manage the project activities.
-
-## System Flow daigram
-
-![System Flow](System%20Flow.png.png)
+- Tested and executed the application to identify and fix issues.
 
 ## System Design Screenshots
 
