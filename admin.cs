@@ -136,7 +136,7 @@ namespace TMs
                 }
 
                 string insertQuery = @"INSERT INTO course_table (courseid, coursename, coursetype, coursetime,courseprice)
-                                VALUES (@courseid, @coursename, @coursetype, @coursetime,@courseprice)";
+                 VALUES (@courseid, @coursename, @coursetype, @coursetime,@courseprice)";
 
                 SqlCommand cmd = new SqlCommand(insertQuery, con);
                 cmd.Parameters.AddWithValue("@courseid", textBox2.Text);
@@ -201,9 +201,9 @@ namespace TMs
             {
                 con.Open();
 
-                string selectQuery = @"SELECT coursename, coursetype, coursetime, courseprice
-                               FROM course_table
-                               WHERE courseid = @courseid";
+               string selectQuery = @"SELECT coursename, coursetype, coursetime, courseprice
+                FROM course_table
+                WHERE coursed = @courseid";
 
                 SqlCommand selectCmd = new SqlCommand(selectQuery, con);
                 selectCmd.Parameters.AddWithValue("@courseid", textBox2.Text);
