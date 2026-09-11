@@ -11,14 +11,17 @@
 ## System Flow daigram
 
 ![System Flow](System%20Flow.png.png)
-**Role: Database Design and Executor**
- 
-- Designed the database structure and tables.
 
-- Created and managed the SQL Server database.
+## System Screenshots
 
-- Implemented database-related functionalities.
+### Login
+![Login](login.png)
 
-- Tested and executed database operations.
+### Signup
+![Signup](signup.png)
 
- 
+### Admin
+![Admin](Admin.png)
+
+### Superadmin
+![Superadmin](Superadmin.png)
