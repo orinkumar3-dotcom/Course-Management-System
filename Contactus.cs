@@ -22,25 +22,25 @@ namespace TMs
 
         }
 
-        protected override void OnKeyDown(KeyEventArgs e) // button = event. event handeller
+        protected override void OnKeyDown(KeyEventArgs e) 
         {
-            base.OnKeyDown(e); // abstract class er method
+            base.OnKeyDown(e); 
 
-            if (e.KeyCode == Keys.Escape) //condition, <- backspace press korle home button chole jabe
+            if (e.KeyCode == Keys.Escape) 
             { this.Close(); }
         }
 
-        protected override bool ProcessCmdKey(ref Message msg, Keys keyData) // <- backspace system e kaj koranor jonno but tao condition must lagbe
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData) 
         {
-            if (keyData == Keys.Escape) //condition
+            if (keyData == Keys.Escape) 
             {
-                OnKeyDown(new KeyEventArgs(keyData)); //onkeydown jokhn call korbo (even handler) tokhn value pass kore diye dibo ref message er moddhe
+                OnKeyDown(new KeyEventArgs(keyData)); 
                 return true;
             }
             return base.ProcessCmdKey(ref msg, keyData);
         }
 
-        private void label1_Click(object sender, EventArgs e) // contact page e home button click korle home e jabe. obj create korlam Form1 er
+        private void label1_Click(object sender, EventArgs e) 
         {
             Form1 frm= new Form1();
             
