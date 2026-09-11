@@ -37,8 +37,8 @@ namespace TMs
                 con.Open();
 
                 string query = @"SELECT courseid, coursename, coursetype, coursetime, courseprice, discountpercent,
-                                 CAST(courseprice - (courseprice * discountpercent / 100) AS DECIMAL(10,2)) AS Finalprice
-                          FROM course_table";
+                 CAST(courseprice - (courseprice * discountpercent / 100) AS DECIMAL(10,2)) AS Finalprice
+                 FROM course_table";
 
                 SqlDataAdapter da = new SqlDataAdapter(query, con);
                 DataTable dt = new DataTable();
@@ -87,7 +87,9 @@ namespace TMs
             {
                 con.Open();
                 // Check if Course ID already exists
-                string checkQuery = "SELECT COUNT(*) FROM course_table WHERE courseid = @courseid";
+              string query = @"SELECT courseid, coursename, coursetype, coursetime, courseprice, discountpercent,
+                 CAST(courseprice - (courseprice * discountpercent / 100) AS DECIMAL(10,2)) AS Finalprice
+                 FROM course_table";
 
                 SqlCommand checkCmd = new SqlCommand(checkQuery, con);
                 checkCmd.Parameters.AddWithValue("@courseid", textBox2.Text);
@@ -100,11 +102,10 @@ namespace TMs
                     return;
                 }
 
-                    string query = @"INSERT INTO course_table
-                                 (courseid, coursename, coursetype, coursetime,courseprice)
-                                 VALUES
-                                 (@courseid, @coursename, @coursetype, @coursetime,@courseprice)";
-
+                 string query = @"SELECT courseid, coursename, coursetype, coursetime, courseprice, discountpercent,
+                 CAST(courseprice - (courseprice * discountpercent / 100) AS DECIMAL(10,2)) AS Finalprice
+                 FROM course_table";
+                   
                     SqlCommand cmd = new SqlCommand(query, con);
 
                     cmd.Parameters.AddWithValue("@courseid", textBox2.Text);
@@ -134,9 +135,7 @@ namespace TMs
             {
                 con.Open();
 
-                string selectQuery = @"SELECT coursename, coursetype, coursetime,courseprice
-                               FROM course_table
-                               WHERE courseid = @courseid";
+               string query = "SELECT userid, firstname, lastname, email, password, dob FROM user_table WHERE userid = @userid";
 
                 SqlCommand selectCmd = new SqlCommand(selectQuery, con);
                 selectCmd.Parameters.AddWithValue("@courseid", textBox2.Text);
@@ -174,11 +173,11 @@ namespace TMs
                     : Convert.ToDouble(textBox3.Text);
 
                 string updatequery = @"UPDATE course_table
-                                 SET coursename = @coursename,
-                                     coursetype = @coursetype,
-                                     coursetime = @coursetime,
-                                     courseprice = @courseprice
-                                 WHERE courseid = @courseid";
+                 SET coursename = @coursename,
+                     coursetype = @coursetype,
+                     coursetime = @coursetime,
+                     courseprice = @courseprice
+                 WHERE coursed = @courseid";
 
                 SqlCommand updatecmd = new SqlCommand(updatequery, con);
 
@@ -320,10 +319,8 @@ namespace TMs
             {
                 con.Open();
 
-                string query = @"UPDATE course_table
-                          SET discountpercent = @discount
-                          WHERE courseid = @courseid";
-
+              string query = @"UPDATE course_table SET discountpercent = @discount WHERE coursed = @courseid";
+                  
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@discount", discountValue);
                 cmd.Parameters.AddWithValue("@courseid", textBox2.Text);
@@ -384,7 +381,7 @@ namespace TMs
             {
                 con.Open();
 
-                string query = "UPDATE course_table SET discountpercent = @discount"; // no WHERE = every row
+               string query = "UPDATE course_table SET discountpercent = @discount"; // no WHERE = every row
 
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@discount", discountValue);
