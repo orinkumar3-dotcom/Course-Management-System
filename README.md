@@ -12,16 +12,27 @@
 
 ![System Flow](System%20Flow.png.png)
 
-## System Screenshots
+## System Design Screenshots
 
 ### Login
 ![Login](login.png)
 
+![Login](LoginUI.png)
+
 ### Signup
 ![Signup](signup.png)
 
+![Signup](SignupUI.png)
+
 ### Admin
 ![Admin](Admin.png)
+
+![Admin](adminUI.png)
+
+### Student
+
+![Student](studentUI.png)
+
 
 ### Superadmin
 ![Superadmin](Superadmin.png)
