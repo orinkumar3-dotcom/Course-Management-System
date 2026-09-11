@@ -35,34 +35,30 @@ The project uses SQL Server as the database.
 
 The database contains tables for storing user and course information.
 
-The database connection is configured through the constring in every file.
+The database connection is configured through the constring in every .cs file.
 
 ## How to Run
 
 1. Open the project in Visual Studio.
 2. Create the required database and tables in SQL Server.
-3. Update the SQL Server connection string in every file. (data source name is change in your device)
+3. Update the SQL Server connection string in every .cs file(need changes in data source, for your configuration.).
 4. Build the project.
 5. Run the project.
 
-My Role
-Group Leader
-Project Executor
-Facilitator
-Database Schema Designer
-Coder
-Team Player
+## My Role
+
+* Group Leader
+* Project Executor
+* Facilitator
+* Database Schema Designer
+* Coder
+* Team Player
 
 ## Project Report
 
 The complete project report containing screenshots, diagrams, database design, and project information is included in this repository.
 
-## Author
-
-Udipto Kumar Bhowmik
-
-
-## System Flow daigram
+## System Flow diagram
 
 ![System Flow](System%20Flow.png.png)
 
@@ -77,5 +73,5 @@ Udipto Kumar Bhowmik
 ### Admin
 ![Admin](Admin.png)
 
-### Superadmin
+### Super admin
 ![Superadmin](Superadmin.png)
