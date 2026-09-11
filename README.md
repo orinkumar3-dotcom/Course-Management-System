@@ -1,6 +1,6 @@
 **Role: Report Making and Facilitator**
  
-- Prepared and organized the project report.
+- Prepared and organized the updated project report.
 
 - Added screenshots, diagrams, and project documentation.
 
@@ -8,17 +8,6 @@
 
 - Helped organize and manage the project activities.
 
-## System Flow
+## System Flow daigram
 
-User
-  ↓
-Login System
-  ↓
-Dashboard
-  ↓
- ┌───────────┬───────────┬───────────┐
- ↓           ↓           ↓
-Student     Course      Teacher
- └───────────┴───────────┴───────────┘
-              ↓
-          SQL Server
+![System Flow](System%20Flow.png.png)
