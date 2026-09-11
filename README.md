@@ -7,4 +7,13 @@
 - Coordinated communication among the group members.
 
 - Helped organize and manage the project activities.
- 
+
+        User
+        ↓
+   Login System
+        ↓
+     Dashboard
+    ↙    ↓    ↘
+Student Course Teacher
+    ↘    ↓    ↙
+      SQL Server
