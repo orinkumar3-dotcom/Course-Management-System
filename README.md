@@ -15,24 +15,23 @@
 ## System Design Screenshots
 
 ### Login
-![Login](login.png)
+![Login](Login%20UI.png)
 
-![Login](LoginUI.png.png)
+### Signup
+![Signup](Signup%20UI.png)
+
+### Admin
+![Admin](admin%20UI.png)
+
+### Student
+![Student](student%20UI.png)
+
+### Login
+![Login](login.png)
 
 ### Signup
 ![Signup](signup.png)
 
-![Signup](SignupUI.png.png)
-
 ### Admin
 ![Admin](Admin.png)
 
-![Admin](adminUI.png.png)
-
-### Student
-
-![Student](studentUI.png.png)
-
-
-### Superadmin
-![Superadmin](Superadmin.png.png)
