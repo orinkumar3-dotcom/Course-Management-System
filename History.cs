@@ -64,15 +64,15 @@ namespace TMs
                     cmd.Parameters.AddWithValue(paramName, purchasedCartIds[i]);
                 }
 
-                string query = $@"SELECT u.userid, u.firstname, u.lastname, u.email,
-                                  co.courseid, co.coursename, co.courseprice, co.discountpercent,
-                                  CAST(co.courseprice - (co.courseprice * co.discountpercent / 100) AS DECIMAL(10,2)) AS Discountprice,
-                                  c.status
-                           FROM cart_table c
-                           JOIN user_table u ON c.userid = u.userid
-                           JOIN course_table co ON c.courseid = co.courseid
-                           WHERE c.cartid IN ({string.Join(",", paramNames)})";
-
+               string query = $@"SELECT u.userid, u.firstname, u.lastname, u.email,
+                  co.courseid, co.coursename, co.courseprice, co.discountpercent,
+                  CAST(co.courseprice - (co.courseprice * co.discountpercent / 100) AS DECIMAL(10,2)) AS Discountprice,
+                  c.status
+           FROM cart_table c
+           JOIN user_table u ON c.userid = u.userid
+           JOIN course_table co ON c.courseid = co.courseid
+           WHERE c.cartid IN ({string.Join(",", paramNames)})";
+           
                 cmd.CommandText = query;
                 cmd.Connection = con;
 
@@ -113,15 +113,15 @@ namespace TMs
                 con.Open();
 
                 string query = @"SELECT u.userid, u.firstname, u.lastname, u.email,
-                         co.courseid, co.coursename, co.courseprice, co.discountpercent,
-                         CAST(co.courseprice - (co.courseprice * co.discountpercent / 100) AS DECIMAL(10,2)) AS discountprice,
-                         c.status, c.date_added
-                  FROM cart_table c
-                  JOIN user_table u ON c.userid = u.userid
-                  JOIN course_table co ON c.courseid = co.courseid
-                  WHERE c.userid = @userid AND c.status = 'Purchased'
-                  ORDER BY c.date_added DESC";
-
+          co.courseid, co.coursename, co.courseprice, co.discountpercent,
+          CAST(co.courseprice - (co.courseprice * co.discountpercent / 100) AS DECIMAL(10,2)) AS discountprice,
+          c.status, c.date_added
+   FROM cart_table c
+   JOIN user_table u ON c.userid = u.userid
+   JOIN course_table co ON c.courseid = co.courseid
+   WHERE c.userid = @userid AND c.status = 'Purchased'
+   ORDER BY c.date_added DESC";
+   
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@userid", userid);
 
