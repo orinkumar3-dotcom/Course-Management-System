@@ -16,7 +16,6 @@ namespace TMs
         private List<string> purchasedCartIds;
         private Form previousForm;
         string constring = @"Data Source=localhost;Initial Catalog=Project;Integrated Security=True;TrustServerCertificate=True";
-
         public Receipt(List<string> cartIds, Form callingForm)
         {
             InitializeComponent();
