@@ -92,11 +92,11 @@ namespace TMs
             using (SqlConnection con = new SqlConnection(constring))
             {
                 string query = @"UPDATE user_table 
-                     SET firstname = @firstname, 
-                     lastname = @lastname, 
-                     email = @email, 
-                     dob = @dob 
-                 WHERE userid = @userid";
+           SET firstname = @firstname, 
+               lastname = @lastname, 
+               email = @email, 
+               dob = @dob 
+           WHERE userid = @userid";
 
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
@@ -136,8 +136,8 @@ namespace TMs
             using (SqlConnection con = new SqlConnection(constring))
             {
                 string query = @"UPDATE user_table 
-                          SET password = @password 
-                          WHERE userid = @userid";
+          SET password = @password 
+          WHERE userid = @userid";
                 using (SqlCommand cmd = new SqlCommand(query, con))
                 {
                     if (textBox5.Text != textBox6.Text)
